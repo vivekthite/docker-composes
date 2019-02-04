@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    container_name: PostgresInstance
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: superpostgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - 5432:5432  
